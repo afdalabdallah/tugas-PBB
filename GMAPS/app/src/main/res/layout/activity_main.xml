@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent">
+
+    <TextView android:text="Lat" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/editText_lat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="5dp"
+        tools:ignore="MissingConstraints" />
+    <TextView android:text="Long" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText android:id="@+id/editText_long" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0" android:inputType="numberDecimal"
+        android:layout_marginBottom="5dp" />
+
+    <TextView android:text="Zoom" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText android:id="@+id/idZoom" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0" android:inputType="numberDecimal"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:id="@+id/editText_location_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter location name"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGo"
+        android:text="Go"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGoToMyLocation"
+        android:text="Go to my location"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdateMap"
+        android:text="Search location"
+        android:layout_marginBottom="8dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_layout"/>
+
+</LinearLayout>
